@@ -29,7 +29,7 @@ export default function NewDownloader() {
       const response = await fetch(`/api/reelsDownloader?url=${encodeURIComponent(url)}`);
       const data = await response.json();
 
-      console.log("API Response:", data);
+      // console.log("API Response:", data);
 
       if (data.success) {
         if (data.media?.[0]?.url) {
@@ -73,12 +73,12 @@ export default function NewDownloader() {
 
   return (
     <>
-      <section className="bg-[url(/images/instabg.jpg)] relative z-20 h-[1030px] md:h-screen text-white bg-cover bg-center justify-items-center  bg-white  ">
+      <section className="bg-[url(/images/instamainbg.jpg)] relative z-20 h-[1030px] md:h-screen text-white bg-cover bg-center justify-items-center  bg-white  ">
       
         <BackgroundBeamsWithCollision >
           <div className=" max-w-7xl relative mx-auto">
-          <Image src="/images/instamainbg.png" className=" absolute top-20 xl:h-auto xl:w-auto w-[200px] h-[200px] -left-24 rotate-12 select-none" height={400} width={400} alt="LogoMain"/>
-          <Image src="/images/instamainbg.png" className=" absolute top-20 xl:h-auto xl:w-auto w-[200px] h-[200px] -right-24 -rotate-12 select-none" height={400} width={400} alt="LogoMain"/>
+          <Image src="/images/instamainbg.png" className=" absolute top-20 xl:h-[400px] xl:w-[400px] w-[200px] h-[200px] -left-24 rotate-12 select-none" height={400} width={400} alt="LogoMain"/>
+          <Image src="/images/instamainbg.png" className=" absolute top-20 xl:h-[400px] xl:w-[400px] w-[200px] h-[200px] -right-24 -rotate-12 select-none" height={400} width={400} alt="LogoMain"/>
           <h1 className=" text-6xl text-center relative pt-20 font-bold"> <span className="bg-gradient-to-r to-[#240055] from-[#D00096] text-transparent bg-clip-text">Instagram </span>video Downloader</h1>
           <p className=" text-2xl text-center relative pt-2">Download Instagram Videos, Photos, Reels</p>
           <div className="p-6 max-w-2xl border-2 rounded-lg border-pink-600 mx-auto mt-10 relative z-20 ">
