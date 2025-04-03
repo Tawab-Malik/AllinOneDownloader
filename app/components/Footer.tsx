@@ -15,7 +15,7 @@ const Footer = () => {
         <p className='pt-2'>&copy; {currentYear} AllinOne Downloader. All Rights Reserved.</p>
         
         {/* Social Media Links */}
-        <div className="flex justify-center space-x-6 mt-4">
+        <div className="flex  justify-center space-x-6 mt-4">
           <Link
             href="https://www.instagram.com/taw_abmalik?igsh=dGs5ZTljZnZiYXds"
             target="_blank"
