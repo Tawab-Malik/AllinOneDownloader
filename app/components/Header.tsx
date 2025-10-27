@@ -18,7 +18,10 @@ export default function HeaderNew() {
         <header className="bg-gray-900 text-white py-2 md:py-6">
             <div className="max-w-6xl mx-auto px-2 md:px-6 flex justify-between items-center">
                 {/* Logo or Title */}
-                <Image src="/images/allinone.png" className=' ' height={100} width={200} alt='logo' />
+                <Link href="/">
+                    <Image src="/images/allinone.png" className=' ' height={100} width={200} alt='logo' />
+                </Link>
+
 
                 {/* Mobile Menu Toggle */}
 
